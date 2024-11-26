@@ -60,8 +60,7 @@
     "test": "jest --no-watchman",
     "prepare-release": "yarn build && yarn test",
     "release": "yarn prepare-release && bob prepack && npm publish dist",
-    "ci:release:canary": "node bump.js && bob prepack && npm publish dist --tag alpha --access public",
-    "postinstall": "husky install"
+    "ci:release:canary": "node bump.js && bob prepack && npm publish dist --tag alpha --access public"
   },
   "devDependencies": {
     "@babel/core": "7.19.1",
